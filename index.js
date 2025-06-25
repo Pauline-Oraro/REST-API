@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use('/users', usersRoutes)
 
 
-//get request to home route
+//get request to home route and the function runs once the route is visited
 app.get("/", (req, res) => res.send("Welcome to the users API"))
 
 //listen for incoming requests and a callback function which is going to be executed once we run the server.
